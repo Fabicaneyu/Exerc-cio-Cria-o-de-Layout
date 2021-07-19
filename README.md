@@ -8,7 +8,7 @@
 
 
 <div align="center">
-    <img src="img/pef.png"  width="300">
+    <img src="Formulario/img/pef.png"  width="300">
 </div>
 
 <h3 align="center">
