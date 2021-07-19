@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+    <!-- Título da página (aparece na aba) -->
+    <title>Layout</title>
+</head>
+
+<body>
+    <header>
+        <!-- Cabeçalho com Logotipo e título -->
+        <div>
+            <img class="titulo" src="img/pef.png" width="250" height="150" alt="Logotipo do projeto Prisma Educação Financeira"> 
+            <br>
+        </div>
+        <div>
+            <h1 class="titulo">PEF - Formulário de Contato</h1>
+            <br>
+        </div>
+    </header>
+
+    <!-- Início do formulário -->
+
+    <form>
+
+        <fieldset class="grupo">
+            <!-- Campo do nome  -->
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" placeholder="Insira seu nome completo" required>
+            </div>
+
+
+        </fieldset>
+
+        <!-- Campo de email-->
+        <div class="campo">
+            <label for="email"><strong>E-mail</strong></label>
+            <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required>
+        </div>
+
+        <!-- Campo de telefone-->
+        <div class="campo">
+            <label for="phone"><strong>Telefone</strong></label>
+            <input type="number" name="phone" id="phone" placeholder="Insira seu telefone" required>
+        </div>
+
+        <!-- Caixa de texto -->
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>Mensagem</strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"
+                placeholder="Insira sua mensagem"></textarea>
+        </div>
+
+        <!-- Campo de marcar (checkbox) se concorda com os termos -->
+        <fieldset class="grupo">
+            <div id="check">
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1"> Concordo com os termos e condições</label>
+            </div>
+        </fieldset>
+        <!-- Botão para enviar o formulário -->
+        <button class="botao" type="submit" onsubmit="">Enviar</button>
+    </form>
+</body>
+
+</html>
